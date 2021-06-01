@@ -1,0 +1,27 @@
+body {
+    background: #18181e;
+    color: #ec7b39;
+}
+
+button {
+    color: beige;
+    box-shadow: 0px 1px 5px 0px #fff;
+}
+
+input[type="text"] {
+    background: #4b4954;
+    color: antiquewhite;
+}
+
+
+.name__block {
+    background: #39373c;
+}
+
+.movie__list {
+    background: #373745;
+}
+
+.li__style {
+    background: #565656;
+}

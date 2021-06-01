@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" class="dark__theme" href="">
+    <link rel="icon" href="images/movie.png">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Онлайн база фильмов и сериалов</h1>
+
+    <div class="dark__theme">
+        <div class="dark" title="темная тема">
+            
+        </div>
+    </div>
+
+    <div class="movie__section">
+        <h3>Введите название или ID Кинопоиска</h3>
+
+        <div class="input__section">
+            <input type="text" placeholder="Название фильма">
+            <button>Поиск</button>
+        </div>
+
+        <div class="player__section">
+            <div id="yohoho" 
+            data-kinopoisk=""
+            data-title=""
+            ></div>
+            
+        </div>
+    </div>
+
+    <div class="search__story">
+        <div class="movie__list">
+<!--             <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+            </ul> -->
+        </div>
+        <div class="name__block">
+            <h3>история поиска</h3>
+            <div class="search__icon">
+                <img src="images/story.png" alt="">
+            </div>
+        </div>
+    </div>
+
+
+    <script src="app.js"></script>
+    <script src="//yohoho.cc/yo.js"></script>
+</body>
+
+</html>
