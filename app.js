@@ -4,9 +4,13 @@ const player = document.getElementById('yohoho')
 
 let kinopoisk = true
 
-btn.addEventListener('click', getMovie)
+btn.addEventListener('click', ()=>{
+    if(input.value != ''){
+        getMovie()
+    }
+})
 input.addEventListener('keypress', (e)=>{
-    if(e.key === 'Enter'){
+    if(e.key === 'Enter' && input.value != ''){
         getMovie()
     }
 })
@@ -28,6 +32,10 @@ input.addEventListener('keypress', (e)=>{
 
 if(localStorage.getItem('search-movies')) {
     const searchList = document.querySelector('.search__story').style = 'display: block;'
+}
+if(localStorage.getItem('dark-theme')) {
+    const head = document.querySelector('.dark__theme').setAttribute('href', 'dark.css')
+    const dark = document.querySelector('.dark').classList.add('white')
 }
 
 
@@ -156,9 +164,12 @@ dark.addEventListener('click', ()=>{
     if(darkActive){
         head.setAttribute('href', 'dark.css')
         dark.classList.add('white')
+
+        localStorage.setItem('dark-theme', darkActive)
     } else {
         head.setAttribute('href', '')
         dark.classList.remove('white')
+        localStorage.setItem('dark-theme', darkActive)
     }
     
     
